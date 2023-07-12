@@ -109,7 +109,7 @@ export const addComment = createAsyncThunk(
     try {
       const token = thunkAPI.getState().auth.user.token;
 
-      const response = await fetch(`http://localhost:5000/api/posts/comment/${id}`,{
+      const response = await fetch(``https://social-media-app-farz.onrender.com/api/posts/comment/${id}`,{
         method:'PUT',
         headers:{'Content-Type':'application/json',
       'Authorization':`Bearer ${token}`}
@@ -143,7 +143,7 @@ export const deleteComment = createAsyncThunk(
       const token = thunkAPI.getState().auth.user.token;
 
       const response = await fetch(
-        `http://localhost:5000/api/posts/comment/${id}`,
+        ``https://social-media-app-farz.onrender.com/api/posts/comment/${id}`,
         {
           method: 'DELETE',
           headers: {
@@ -209,7 +209,7 @@ export const editPost = createAsyncThunk(
       const token = thunkAPI.getState().auth.user.token;
 
       const response = await fetch(
-        `http://localhost:5000/api/posts/${id}`,
+        ``https://social-media-app-farz.onrender.com/api/posts/${id}`,
         {
           method: 'PUT',
           headers: {
