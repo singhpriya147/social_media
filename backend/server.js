@@ -26,6 +26,7 @@ app.use('/api/users', userRoutes);
 
 // if(process.env.NODE_ENV==='production'){
 app.use(express.static(path.join(__dirname, '../frontend/build')));
+
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../frontend/build/index.html'));
 });
@@ -37,4 +38,9 @@ app.get('*', (req, res) => {
 
 
 app.use(errorHandler);
-app.listen(port, () => console.log(`SERVER IS RUNNING ON ${port}`));
+app.listen(port, () =>
+  console.log(
+    `SERVER IS RUNNING ON ${port} `
+   
+  )
+);
