@@ -87,7 +87,7 @@ export const getUser=createAsyncThunk('auth/getUser',async(id,thunkAPI)=>{
      const response = await fetch(
        `https://social-media-app-farz.onrender.com/api/users`,
        {
-         //  const response = await fetch(`process.env.BASE_URL/api/users`, {
+         //  const response = await fetch(``https://social-media-app-farz.onrender.com/api/users`, {
          method: 'GET',
          headers: {
            Authorization: `Bearer${token}`,
