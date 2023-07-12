@@ -23,14 +23,7 @@
     "mongoose": "^6.11.3",
     "nodemailer": "^6.9.3"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/singhpriya147/memories.git"
-  },
-  "bugs": {
-    "url": "https://github.com/singhpriya147/memories/issues"
-  },
-  "homepage": "https://github.com/singhpriya147/memories#readme",
+ 
   "devDependencies": {
     "nodemon": "^3.0.1"
   }
