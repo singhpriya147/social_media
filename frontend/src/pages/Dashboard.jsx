@@ -72,7 +72,7 @@ function Dashboard() {
 
 
   // const getUserFeed = async () => {
-  //   const res = await fetch(`http://localhost:5000/api/posts`, {
+  //   const res = await fetch(`/api/posts`, {
   //     headers: {
   //       Authorization: `Bearer ${token}`,
   //     },
@@ -87,7 +87,7 @@ function Dashboard() {
   const getAllPerson = async () => {
 
     try{
-    const res = await fetch(`http://localhost:5000/api/users`, {
+    const res = await fetch(`https://social-media-app-farz.onrender.com/api/users`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
